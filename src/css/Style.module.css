@@ -1,0 +1,430 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+html {
+    overflow-y: scroll;
+}
+
+a {
+    text-decoration: none;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    color: #fff;
+    background: rgb(26, 23, 42);
+    position: static;
+    height: 80px;
+    width: 100vw;
+    z-index: 10;
+}
+
+nav ul li:hover {
+    color: greenyellow;
+    cursor: pointer;
+}
+
+#spotifytext {
+    margin-top: 20px;
+    font-size: large;
+    color: white;
+    font-family: spotify-circular, Helvetica, Arial, sans-serif;
+    font-size: larger;
+    cursor: pointer;
+}
+
+#spotifytext h2 {
+    display: inline;
+    font-size: 30px;
+   
+}
+
+#spotifytext i {
+    font-size: 30px;
+   
+}
+
+nav ul {
+    margin-left: 400px;
+    list-style: none;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-top: 20px;
+    margin-left: 15px;
+    padding: 10px;
+    font-family: spotify-circular, Helvetica, Arial, sans-serif;
+    font-weight: bold;
+    color: white;
+}
+
+#SpotifyFree {
+    background: linear-gradient(#fa00a9, #a100d6);
+    height: 550px;
+    display: flex;
+    justify-content: space-around;
+}
+
+#freeImage {
+    position: static;
+    z-index: 0;
+}
+
+#mobilebody {
+    height: 600px;
+    width: 600px;
+    margin-right: 100px;
+    margin-top: 80px;
+}
+
+#mobilescreen {
+    width: 260px;
+    height: 400px;
+    position: absolute;
+    top: 230px;
+    left: 172px;
+}
+
+#Million {
+    height: 400px;
+    width: 1000px;
+    margin-top: 20px;
+    margin-right: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+#Million h1 {
+    color: #fff;
+    font-family: spotify-circular, Helvetica, Arial, sans-serif;
+    font-size: 50px;
+    margin-top: 100px;
+}
+
+#Million a {
+    color: #000;
+    background: #fff;
+    padding: 15px 0px 15px 22px;
+    margin-right: 540px;
+    border-radius: 50px;
+    font-family: spotify-circular, Helvetica, Arial, sans-serif;
+    font-weight: bold;
+    margin-top: 20px;
+    font-size: 15px;
+}
+
+#Million a:hover {
+    color: #000;
+    background: #fff;
+    padding: 16px 1px 16px 23px;
+    margin-right: 538px;
+    border-radius: 50px;
+    font-family: spotify-circular, Helvetica, Arial, sans-serif;
+    font-weight: bold;
+    margin-top: 19px;
+    font-size: 15.3px;
+}
+
+#whySpotify {
+    display: flex;
+    flex-direction: column;
+}
+
+#whySpotify h1 {
+    color: black;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: 80px;
+    font-family: spotify-circular, Helvetica, Arial, sans-serif;
+    font-size: 40px;
+    font-weight: bolder;
+}
+
+#circle {
+    display: flex;
+    height: 400px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.circlelogo {
+    margin-left: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    font-family: spotify-circular, Helvetica, Arial, sans-serif;
+    height: 300px;
+    text-align: center;
+    padding: 1px 1px 1px 1px;
+}
+
+.circleimg {
+    width: 150px;
+    height: 150px;
+    background: linear-gradient(#9198e9, #a900d2);
+    border-radius: 50%;
+    cursor: pointer;
+    /* position: relative; */
+}
+
+.circleimg i {
+    /* position: static; */
+    font-size: 100px;
+    margin: 25px;
+    color: #fff;
+}
+
+.info h3 {
+    font-family: spotify-circular, Helvetica, Arial, sans-serif;
+    font-size: 20px;
+    font-weight: bolder;
+    letter-spacing: 0.5px;
+    color: black;
+}
+
+.info p {
+    color: rgb(49, 49, 49);
+    font-family: spotify-circular, Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    text-align: center;
+    letter-spacing: 1px;
+    line-height: 20px;
+    margin-top: 10px;
+}
+
+/* its free */
+
+#itsFree {
+    height: 500px;
+    background: linear-gradient(#9198e9, #a900d2);
+    margin-top: 15px;
+}
+
+#itsFree h1 {
+    font-family: spotify-circular, Helvetica, Arial, sans-serif;
+    text-align: center;
+    margin-top: 180px;
+    color: #fff;
+    font-size: 45px;
+}
+
+#itsFree span {
+    text-align: center;
+}
+
+/* got a question  */
+
+#gotQuestion {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+#gotQuestion h1 {
+    font-family: spotify-circular, Helvetica, Arial, sans-serif;
+    text-align: center;
+    margin: 60px;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.question {
+    margin: 0 auto;
+    font-family: spotify-circular, Helvetica, Arial, sans-serif;
+}
+
+.questiontext {
+    background: #f8f8f8;
+    padding: 35px;
+    border: 0.1px solid #ccc;
+    width: 1100px;
+}
+
+/* hide steps for now */
+
+.questionhide {
+    display: none;
+}
+
+.answer {
+    display: flex;
+    flex-direction: column;
+    border-left: 0.1px solid #ccc;
+    border-right: 0.1px solid #ccc;
+    border-bottom: 0.1px solid #ccc;
+}
+
+
+.answer p {
+    color: rgb(50, 50, 50);
+    margin: 5px;
+    font-size: 15px;
+    margin-left: 35px;
+}
+
+.answer ol {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 35px;
+    color: rgb(50, 50, 50);
+}
+
+/* Ready Let play */
+
+#Ready {
+    /* position: relative; */
+    height: 450px;
+    background: linear-gradient(#fa00a9, #a100d6);
+    margin-top: 20px;
+}
+
+#Ready h1 {
+    color: #fff;
+    text-align: center;
+    margin-top: 150px;
+    margin-bottom: 50px;
+    font-family: spotify-circular, Helvetica, Arial, sans-serif;
+    font-size: 70px;
+    font-weight: bolder;
+}
+
+#Ready a {
+    color: #000;
+    background: #fff;
+    padding: 14px 40px;
+    margin-left: 510px;
+    border-radius: 50px;
+    font-family: spotify-circular, Helvetica, Arial, sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+#Ready a:hover {
+    color: #000;
+    background: #fff;
+    padding: 16px 42px;
+    margin-left: 508px;
+    border-radius: 50px;
+    font-family: spotify-circular, Helvetica, Arial, sans-serif;
+    font-size: 16.3px;
+    font-weight: bold;
+}
+
+/* Footer */
+
+#foot {
+    height: 500px;
+    background: #000;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+#mainFoot {
+    height: 600px;
+    display: flex;
+    justify-content: space-around;
+    font-family: spotify-circular, Helvetica, Arial, sans-serif;
+}
+
+#footerLinks {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: space-between;
+}
+
+#footerLinks div {
+    margin-top: 50px;
+    margin-left: 100px;
+}
+
+/* #footlogo i+h3 {
+    margin-top: 50px;
+    margin-left: 100px;
+    font-size: larger;
+    font-weight: bold;
+  
+  } */
+
+#footerLinks ul ul {
+    font-size: 13px;
+    margin-bottom: 20px;
+    color: #ccc;
+    font-weight: bold;
+}
+
+#footerLinks ul ul:hover {
+    color: #ccc;
+}
+
+#footerLinks ul li {
+    margin-bottom: 15px;
+}
+
+#footerLinks ul li:hover {
+    color: greenyellow;
+    cursor: pointer;
+}
+
+#socialFoot {
+    margin-top: 50px;
+}
+
+#socialFoot i {
+    font-size: 50px;
+    margin-left: 10px;
+}
+
+#socialFoot i:hover {
+    font-size: 50px;
+    margin-left: 10px;
+    color: yellowgreen;
+    cursor: pointer;
+}
+
+/* foot logo */
+
+#footLogo i {
+    font-size: 30px;
+    margin-bottom: 2px;
+}
+
+#footLogo h3 {
+    display: inline-block;
+    font-size: 30px;
+    cursor: pointer;
+
+}
+
+/* tailFooter */
+
+#lastFooter {
+    display: flex;
+    justify-content: space-around;
+}
+
+#lastFooter ul li {
+    display: inline-block;
+    margin-left: 20px;
+    margin-bottom: 50px;
+    font-family: spotify-circular, Helvetica, Arial, sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+    color: gray;
+}
+
+#lastFooter ul li:hover {
+    color: greenyellow;
+    cursor: pointer;
+}
